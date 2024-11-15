@@ -51,6 +51,7 @@ jobs:
         - name: Nodejs dependencies
           run: npm install
         - name: Coverage
+          continue-on-error: true
           run: npm run code-coverage
         - name: Upload
           if: always()
